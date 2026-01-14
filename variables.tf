@@ -502,10 +502,10 @@ variable "advanced_security_options_anonymous_auth_enabled" {
 
 variable "identity_center_options" {
   type = object({
-    enabled_api_access         = optional(bool, true)
+    enabled_api_access           = optional(bool, true)
     identity_center_instance_arn = string
-    subject_key                = string
-    roles_key                  = string
+    subject_key                  = string
+    roles_key                    = string
   })
 
   default     = null
